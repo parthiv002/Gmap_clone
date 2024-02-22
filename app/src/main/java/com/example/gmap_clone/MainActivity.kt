@@ -3,6 +3,7 @@ package com.example.gmap_clone
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.SearchView
 import com.google.android.gms.maps.GoogleMap
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             mgoogleMap = it
         })
 
-        val mapOptionButton: ImageButton = findViewById(R.id.mapOptionsMenu)
+        val mapOptionButton: ImageView = findViewById(R.id.mapOptionsMenu)
         val popupMenu = PopupMenu(this, mapOptionButton)
         popupMenu.menuInflater.inflate(R.menu.map_options, popupMenu.menu)
         popupMenu.setOnMenuItemClickListener {menuItem ->

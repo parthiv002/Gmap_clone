@@ -16,13 +16,14 @@
         android:layout_height="match_parent"
         android:name="com.google.android.gms.maps.SupportMapFragment"/>
 
-    <ImageButton
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/mapOptionsMenu"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:background="@color/white"
+        app:shapeAppearanceOverlay="@style/roundimageview"
         android:scaleType="fitXY"
         android:layout_gravity="right"
         android:src="@drawable/map_change"/>
